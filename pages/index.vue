@@ -37,7 +37,7 @@ const openInvitation = () => {
     <Transition name="invite">
       <section v-if="invitationOpen" class="invitation-screen" aria-label="Invitation de mariage">
         <header class="invitation-header">
-          <span class="brand-mark">C <i>by</i> C</span>
+          <span class="brand-mark">C <i>&</i> M</span>
           <span class="header-note">LE 18 SEPTEMBRE 2027</span>
         </header>
 
@@ -71,7 +71,7 @@ const openInvitation = () => {
 
         <footer class="invitation-footer">
           <span>AVEC TOUTE NOTRE AFFECTION</span>
-          <span>FAIT AVEC CŒUR PAR C BY C</span>
+          <a href="https://www.cbyc-invitations.fr/" target="_blank" rel="noopener noreferrer">FAIT AVEC CŒUR PAR C BY C ↗</a>
         </footer>
       </section>
     </Transition>
