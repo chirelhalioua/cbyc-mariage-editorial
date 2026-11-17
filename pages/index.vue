@@ -18,9 +18,9 @@ const openInvitation = () => {
         <div class="cover-frame">
           <p class="eyebrow cover-eyebrow">UNE INVITATION À CÉLÉBRER L’AMOUR</p>
           <div class="cover-names">
-            <span>Élise</span>
+            <span>Clara</span>
             <i>&</i>
-            <span>Antoine</span>
+            <span>Mathis</span>
           </div>
           <div class="cover-rule"></div>
           <p class="cover-date">18 SEPTEMBRE 2027 <span>—</span> PROVENCE</p>
@@ -43,7 +43,7 @@ const openInvitation = () => {
 
         <div class="invitation-content">
           <p class="eyebrow">AVEC LE BONHEUR DE NOS FAMILLES</p>
-          <h1 class="invitation-names">Élise <em>&</em> Antoine</h1>
+          <h1 class="invitation-names">Clara <em>&</em> Mathis</h1>
           <div class="ornament" aria-hidden="true"><span></span> ✳ <span></span></div>
           <p class="invitation-copy">
             Ont la joie de vous convier à célébrer leur mariage.<br />
@@ -66,7 +66,7 @@ const openInvitation = () => {
           </div>
 
           <p class="closing-line">Au plaisir de vous retrouver pour ce grand jour.</p>
-          <div class="closing-initials">E <span>&</span> A</div>
+          <div class="closing-initials">C <span>&</span> M</div>
         </div>
 
         <footer class="invitation-footer">
