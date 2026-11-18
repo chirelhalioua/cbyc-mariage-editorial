@@ -59,6 +59,12 @@ const openInvitation = () => {
             </div>
             <div class="detail-divider"></div>
             <div class="detail-block">
+              <span class="detail-label">L’HEURE</span>
+              <strong>16h00</strong>
+              <span class="detail-main">Début de la cérémonie</span>
+            </div>
+            <div class="detail-divider"></div>
+            <div class="detail-block">
               <span class="detail-label">LE LIEU</span>
               <strong>Mas des Oliviers</strong>
               <span class="detail-main">Provence, France</span>
