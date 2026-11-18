@@ -81,7 +81,7 @@ button { font: inherit; }
   font-size: clamp(19px, 2.4vw, 25px); line-height: 1.45; font-weight: 400;
 }
 .event-details {
-  width: min(570px, 100%); display: grid; grid-template-columns: 1fr 1px 1fr; align-items: center; gap: 36px;
+  width: min(570px, 100%); display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: center; gap: 24px;
   margin: 48px 0 34px; padding: 26px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
 .detail-block { display: flex; flex-direction: column; align-items: center; gap: 6px; }
@@ -113,7 +113,9 @@ button { font: inherit; }
   .invitation-names { font-size: clamp(57px, 17vw, 88px); }
   .invitation-copy { font-size: 20px; }
   .desktop-break { display: none; }
-  .event-details { gap: 14px; margin: 38px 0 30px; padding: 22px 0; }
+  .event-details { gap: 10px; margin: 38px 0 30px; padding: 22px 0; }
+  .detail-block strong { font-size: 19px; }
+  .detail-main { font-size: 9px; }
   .detail-block strong { font-size: 21px; }
   .detail-main { font-size: 10px; }
   .closing-line { max-width: 270px; font-size: 20px; }
