@@ -5,26 +5,15 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'fr' },
-      title: 'Clara & Mathis — Invitation de mariage',
+      title: 'Clara & Mathis — Invitation Art Déco | C by C',
       meta: [
-        {
-          name: 'description',
-          content: 'Découvrez l’invitation de mariage de Clara & Mathis, le 18 septembre 2027 en Provence. Une création élégante C by C.'
-        },
-        { name: 'theme-color', content: '#eee7dc' },
+        { name: 'description', content: 'Clara & Mathis vous invitent à célébrer leur mariage le 18 septembre 2027 en Provence. Une invitation digitale Art Déco signée C by C.' },
+        { name: 'theme-color', content: '#541c2a' },
         { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'fr_FR' },
-        { property: 'og:title', content: 'Clara & Mathis — Invitation de mariage' },
-        {
-          property: 'og:description',
-          content: 'Clara & Mathis ont la joie de vous convier à célébrer leur mariage le 18 septembre 2027 en Provence.'
-        },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Clara & Mathis — Invitation de mariage' },
-        {
-          name: 'twitter:description',
-          content: 'Une invitation de mariage élégante imaginée par C by C.'
-        }
+        { property: 'og:title', content: 'Clara & Mathis — Invitation Art Déco' },
+        { property: 'og:description', content: 'Une invitation de mariage digitale aux accents bordeaux et champagne.' },
+        { name: 'twitter:card', content: 'summary' }
       ]
     }
   },
