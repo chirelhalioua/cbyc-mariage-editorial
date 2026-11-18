@@ -1,85 +1,64 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-const invitationOpen = ref(false)
-
-const openInvitation = () => {
-  invitationOpen.value = true
-}
+const year = '2027'
+const mapUrl = 'https://www.google.com/maps/search/?api=1&query=Mas+des+Oliviers+Provence'
 </script>
 
 <template>
-  <main class="wedding-site">
-    <Transition name="cover">
-      <section v-if="!invitationOpen" class="cover-screen" aria-label="Couverture de l'invitation">
-        <div class="cover-image" role="img" aria-label="Photographie romantique de mariage"></div>
-        <div class="cover-shade"></div>
+  <main class="artdeco-site">
+    <section class="hero" aria-label="Invitation de mariage">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-top"><span>C BY C</span><span>INVITATION PRIVÉE · {{ year }}</span></div>
+      <div class="hero-frame">
+        <div class="sunburst" aria-hidden="true"><span></span></div>
+        <p class="overline">AVEC LA JOIE DE NOS FAMILLES</p>
+        <h1><span>Clara</span><i>&</i><span>Mathis</span></h1>
+        <div class="hero-divider"><span></span><b>✦</b><span></span></div>
+        <p class="hero-invite">ont le plaisir de vous convier<br />à célébrer leur mariage</p>
+        <p class="hero-date">SAMEDI <b>18</b> SEPTEMBRE 2027</p>
+        <a class="discover" href="#invitation">DÉCOUVRIR L’INVITATION <span>↓</span></a>
+      </div>
+      <div class="hero-bottom"><span>UNE JOURNÉE À CÉLÉBRER</span><span>PROVENCE · FRANCE</span></div>
+    </section>
 
-        <div class="cover-frame">
-          <p class="eyebrow cover-eyebrow">UNE INVITATION À CÉLÉBRER L’AMOUR</p>
-          <div class="cover-names">
-            <span>Clara</span>
-            <i>&</i>
-            <span>Mathis</span>
-          </div>
-          <div class="cover-rule"></div>
-          <p class="cover-date">18 SEPTEMBRE 2027 <span>—</span> PROVENCE</p>
-          <button class="open-button" type="button" @click="openInvitation">
-            <span>Voir l’invitation</span>
-            <span class="button-arrow" aria-hidden="true">↗</span>
-          </button>
-          <p class="cover-footnote">AVEC JOIE, NOUS VOUS INVITONS À PARTAGER NOTRE BONHEUR</p>
+    <section id="invitation" class="invitation-section">
+      <div class="section-ornament" aria-hidden="true">✧</div>
+      <p class="overline dark">LE BONHEUR SE PARTAGE</p>
+      <h2>Une journée, <em>mille souvenirs.</em></h2>
+      <p class="intro">Entourés de ceux qui leur sont chers, Clara et Mathis seraient honorés de votre présence pour célébrer leur union et partager cette journée inoubliable.</p>
+
+      <div class="details-card">
+        <div class="details-heading"><span>LE RENDEZ-VOUS</span><span>18 · 09 · 27</span></div>
+        <div class="details-grid">
+          <article><span class="detail-number">01</span><p class="overline dark">LA DATE</p><h3>Samedi</h3><p>18 septembre 2027</p></article>
+          <article><span class="detail-number">02</span><p class="overline dark">LA CÉRÉMONIE</p><h3>16h30</h3><p>Accueil des invités</p></article>
+          <article><span class="detail-number">03</span><p class="overline dark">LA RÉCEPTION</p><h3>18h30</h3><p>Dîner & célébration</p></article>
         </div>
-        <div class="cover-index">C BY C <span>·</span> INVITATION DIGITALE</div>
-      </section>
-    </Transition>
+        <div class="details-footer"><span>MAS DES OLIVIERS · PROVENCE</span><a :href="mapUrl" target="_blank" rel="noopener noreferrer">VOIR L’ITINÉRAIRE ↗</a></div>
+      </div>
+    </section>
 
-    <Transition name="invite">
-      <section v-if="invitationOpen" class="invitation-screen" aria-label="Invitation de mariage">
-        <header class="invitation-header">
-          <span class="brand-mark">C <i>&</i> M</span>
-          <span class="header-note">LE 18 SEPTEMBRE 2027</span>
-        </header>
+    <section class="venue-section">
+      <div class="venue-art" aria-hidden="true"><div class="arch arch-one"></div><div class="arch arch-two"></div><span>18</span></div>
+      <div class="venue-copy">
+        <p class="overline">LE LIEU DE NOTRE RENDEZ-VOUS</p>
+        <h2>Mas des<br /><em>Oliviers</em></h2>
+        <p>Un écrin de charme au cœur de la Provence pour vivre ensemble une parenthèse précieuse.</p>
+        <a :href="mapUrl" target="_blank" rel="noopener noreferrer" class="text-link">LOCALISER LE LIEU <span>↗</span></a>
+      </div>
+    </section>
 
-        <div class="invitation-content">
-          <p class="eyebrow">AVEC LE BONHEUR DE NOS FAMILLES</p>
-          <h1 class="invitation-names">Clara <em>&</em> Mathis</h1>
-          <div class="ornament" aria-hidden="true"><span></span> ✳ <span></span></div>
-          <p class="invitation-copy">
-            Ont la joie de vous convier à célébrer leur mariage.<br />
-            Ils seraient heureux de partager avec vous cette journée<br class="desktop-break" />
-            placée sous le signe de l’amour et de la fête.
-          </p>
+    <section class="closing-section">
+      <div class="closing-pattern" aria-hidden="true"></div>
+      <p class="overline">NOUS AVONS HÂTE DE VOUS RETROUVER</p>
+      <div class="closing-monogram">C <i>&</i> M</div>
+      <p class="closing-date">18 SEPTEMBRE 2027 · PROVENCE</p>
+      <div class="closing-rule"></div>
+      <p class="closing-thanks">Avec toute notre affection</p>
+    </section>
 
-          <div class="event-details">
-            <div class="detail-block">
-              <span class="detail-label">LE JOUR</span>
-              <strong>Samedi</strong>
-              <span class="detail-main">18 septembre 2027</span>
-            </div>
-            <div class="detail-divider"></div>
-            <div class="detail-block">
-              <span class="detail-label">L’HEURE</span>
-              <strong>16h00</strong>
-              <span class="detail-main">Début de la cérémonie</span>
-            </div>
-            <div class="detail-divider"></div>
-            <div class="detail-block">
-              <span class="detail-label">LE LIEU</span>
-              <strong>Mas des Oliviers</strong>
-              <span class="detail-main">Provence, France</span>
-            </div>
-          </div>
-
-          <p class="closing-line">Au plaisir de vous retrouver pour ce grand jour.</p>
-          <div class="closing-initials">C <span>&</span> M</div>
-        </div>
-
-        <footer class="invitation-footer">
-          <span>AVEC TOUTE NOTRE AFFECTION</span>
-          <a href="https://www.cbyc-invitations.fr/" target="_blank" rel="noopener noreferrer">FAIT AVEC CŒUR PAR C BY C ↗</a>
-        </footer>
-      </section>
-    </Transition>
+    <footer class="site-footer">
+      <span>UNE CRÉATION DIGITALE</span>
+      <a href="https://www.cbyc-invitations.fr/" target="_blank" rel="noopener noreferrer">IMAGINÉE AVEC CŒUR PAR <b>C BY C</b> ↗</a>
+    </footer>
   </main>
 </template>
