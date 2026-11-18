@@ -1,17 +1,18 @@
-# C by C — Mariage éditorial
+# C by C — Modèle mariage Art Déco
 
-Troisième modèle indépendant de démonstration pour C by C.
+Modèle de démonstration indépendant visuellement du modèle éditorial vert sauge.
 
-## Concept
-- Couverture photographique plein écran.
-- Bouton « Voir l’invitation » qui ouvre l’invitation avec une transition.
-- Présentation statique et élégante : mariés, date, lieu et texte d’invitation.
-- Aucun module additionnel (RSVP, livre d’or, galerie, etc.).
+## Direction artistique
+- Bordeaux profond, champagne et ivoire.
+- Motifs géométriques rayonnants et arches Art Déco créés en CSS (aucun motif marbre).
+- Typographies Cormorant Garamond et DM Sans.
+- Mise en page responsive avec couverture, invitation, horaires, lieu et pied de page C by C.
+
+## Personnalisation
+Remplacer les prénoms, date, horaires, adresse et lien Google Maps dans `pages/index.vue`.
 
 ## Développement
 ```bash
 npm install
 npm run dev
 ```
-
-Le contenu de démonstration (noms, date, lieu et texte) est à remplacer pour chaque nouveau projet.
